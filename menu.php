@@ -43,3 +43,4 @@ var_dump($get);
 //delete current menu
 $del=$wxmenu->deleteMenu();
 var_dump($del);
+?>
