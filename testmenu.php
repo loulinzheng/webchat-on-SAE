@@ -41,7 +41,7 @@ $url="https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token
 $result=https_request($url,$jsonmenu);
 var_dump($result);
 
-funciton https_request($url,$data=null){
+function https_request($url,$data=null){
 	$curl=curl_init();
 	curl_setopt($curl,CURLOPT_URL,$url);
 	curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,FALSE);
