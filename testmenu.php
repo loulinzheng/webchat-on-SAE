@@ -1,3 +1,4 @@
+<?php
 $jsonmenu='{
 	"button":[
 		{"name":"关于我们",
@@ -55,3 +56,4 @@ funciton https_request($url,$data=null){
 	return $output;
 }
 
+?>
