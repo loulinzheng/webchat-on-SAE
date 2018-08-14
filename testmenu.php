@@ -37,6 +37,11 @@ $jsonmenu='{
 	]	
 }';
 
+require_once "jssdk.php";
+$jssdk = new JSSDK("wx9c52ab6039cbf7ca", "012bace7aaab7463829f854749f93543");
+$access_token = $jssdk->getAccessToken();
+echo $access_token;
+
 $url="https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
 $result=https_request($url,$jsonmenu);
 var_dump($result);
