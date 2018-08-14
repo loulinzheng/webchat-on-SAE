@@ -85,7 +85,7 @@ class JSSDK {
     return $access_token;
   }
 */
-private function getJsApiTicket(){
+public function getJsApiTicket(){
 /*	$mc=memcache_init();
 	if(mc==false)
 	{echo "mc init failed\n";}
@@ -112,7 +112,7 @@ memcache_set($mct,"ticket",$ticket,0,7200);
 return $TICKET;
 }
 
- private function getAccessToken() {
+ public function getAccessToken() {
 $mc=memcache_init();
 	if(mc==false)
 	{echo "mc init failed\n";}
@@ -129,7 +129,7 @@ return $AccessToken;
  }
 
 
-  private function httpGet($url) {
+  public function httpGet($url) {
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_TIMEOUT, 500);
