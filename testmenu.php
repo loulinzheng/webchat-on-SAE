@@ -62,7 +62,7 @@ function https_request($url,$data=null){
 	return $output;
 }
 
-public  static function getUserList($nextid=''){
+ function getUserList($nextid=''){
 	$access_token=$jssdk->getAccessToken;
 	$extend='';
 	if (!empty($next_id)) {
