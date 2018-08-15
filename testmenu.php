@@ -68,7 +68,7 @@ function https_request($url,$data=null){
 	if (!empty($next_id)) {
 		$extend="&next_openid=$next_id";
 	}
-	url="https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$access_token."&next_openid=".$extend;
+	$url="https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$access_token."&next_openid=".$extend;
 	$content=curl_get($url);
 	$ret=json_decode($content,true);
 	return self::getResult($ret)
