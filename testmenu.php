@@ -40,10 +40,11 @@ $jsonmenu='{
 require_once "jssdk.php";
 $jssdk = new JSSDK("wx9c52ab6039cbf7ca", "012bace7aaab7463829f854749f93543");
 $access_token = $jssdk->getAccessToken();
-echo $access_token;
+//echo $access_token;
 
 $url="https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
-$result=https_request($url,$jsonmenu);
+//$result=https_request($url,$jsonmenu);
+$result=getUserList();
 var_dump($result);
 
 function https_request($url,$data=null){
@@ -61,4 +62,25 @@ function https_request($url,$data=null){
 	return $output;
 }
 
+public  static function getUserList($nextid=''){
+	$access_token=$jssdk->getAccessToken;
+	$extend='';
+	if (!empty($next_id)) {
+		$extend="&next_openid=$next_id";
+	}
+	url="https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$access_token."&next_openid=".$extend;
+	$content=curl_get($url);
+	$ret=json_decode($content,true);
+	return self::getResult($ret)
+	 ? array(
+	   'total'=>$ret['total'],
+	   'count'=>$ret['count'],
+	   'list'=>$ret['data']['openid'],
+	   'next_id'=>isset($ret['next_openid'])?ret['next_openid']:null
+       )
+	   :null;
+}
+
+	   
+	   
 ?>
