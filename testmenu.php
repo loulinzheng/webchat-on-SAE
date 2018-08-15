@@ -62,13 +62,13 @@ function https_request($url,$data=null){
 	return $output;
 }
 
- function getUserList($nextid=''){
+ function getUserList($next_id=''){
 	$access_token=$jssdk->getAccessToken;
 	$extend='';
 	if (!empty($next_id)) {
 		$extend="&next_openid=$next_id";
 	}
-	$url="https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$access_token."&next_openid=".$extend;
+	$url="https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$access_token."&next_openid=".$next_id;
 	$content=curl_get($url);
 	$ret=json_decode($content,true);
 	return self::getResult($ret)
