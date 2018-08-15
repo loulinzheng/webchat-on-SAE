@@ -64,7 +64,7 @@ function https_request($url,$data=null){
 	return $output;
 }
 
- function getUserList($next_id=''){
+ /*function getUserList($next_id=''){
 	$access_token=$jssdk->getAccessToken;
 	$extend='';
 	if (!empty($next_id)) {
@@ -82,7 +82,7 @@ function https_request($url,$data=null){
        )
 	   :null;
 }
-
+*/
 	   
 	   
 ?>
