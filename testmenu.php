@@ -55,7 +55,7 @@ $touser = "omVCy0rHL7Y-3j3gbBul2tjK1Oys";
            "touser":'.$touser.',
            "template_id":'.$template_id.',
            "url":"http://devweixin.sinaapp.com",
-           "topcolor":'#FF0000',
+           "topcolor":"#FF0000",
            "data":{
                    "name": {
                        "value":"闫小坤",
