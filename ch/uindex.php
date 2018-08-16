@@ -4,7 +4,7 @@
 require_once "lib/weixin.class.php";
 
 $ret = weixin::getUserList();
-var_dump($ret);
+//var_dump($ret);
 $openid = $ret['list'][0];
 $userinfo = weixin::getUserInfoById($openid);
 var_dump($userinfo);
