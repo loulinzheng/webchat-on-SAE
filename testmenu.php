@@ -54,7 +54,7 @@ $touser = "omVCy0rHL7Y-3j3gbBul2tjK1Oys";
  $data = '{
            "touser":'.$touser.',
            "template_id":'.$template_id.',
-           "url":'http://devweixin.sinaapp.com',
+           "url":"http://devweixin.sinaapp.com",
            "topcolor":'#FF0000',
            "data":{
                    "name": {
