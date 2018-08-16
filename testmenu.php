@@ -49,7 +49,7 @@ $result=https_request($url);
 //$result=getUserList();
 var_dump($result);
 */
-$touser = "OPENID";
+$touser = "omVCy0rHL7Y-3j3gbBul2tjK1Oys";
  $template_id = "TEMPLATEID";
  $data = '{
            "touser":'.$touser.',
