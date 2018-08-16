@@ -41,13 +41,51 @@ require_once "jssdk.php";
 $jssdk = new JSSDK("wx9c52ab6039cbf7ca", "012bace7aaab7463829f854749f93543");
 $access_token = $jssdk->getAccessToken();
 //echo $access_token;
-
+/* 获取用户列表  及上传更新菜单
 //$url="https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
 $url="https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$access_token."&next_openid=".$next_id;
 //$result=https_request($url,$jsonmenu);
 $result=https_request($url);
 //$result=getUserList();
 var_dump($result);
+*/
+$touser = "OPENID";
+ $template_id = "TEMPLATEID";
+ $data = '{
+           "touser":'.$touser.',
+           "template_id":'.$template_id.',
+           "url":"http://devweixin.sinaapp.com",
+           "topcolor":"#FF0000",
+           "data":{
+                   "name": {
+                       "value":"闫小坤",
+                       "color":"#173177"
+                   },
+                   "time":{
+                       "value":"2015年5月4日",
+                       "color":"#173177"
+                   }                   
+           }
+       }';
+
+ $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token='.$access_token;
+ $retjson = curl_post($url, $data);
+ $ret = json_decode($retjson,true);
+ if($ret['errcode'] == 0){
+     echo "Push Template Message OK";
+ }else{
+     echo "Push Template Message Fail\n";
+     var_dump($retjson);
+ }
+function curl_post($url, $post_string){
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post_string);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $data = curl_exec($ch);
+    curl_close($ch);
+    return $data;
+}
 
 function https_request($url,$data=null){
 	$curl=curl_init();
