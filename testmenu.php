@@ -58,11 +58,11 @@ $touser = "omVCy0rHL7Y-3j3gbBul2tjK1Oys";
            "topcolor":'#FF0000',
            "data":{
                    "name": {
-                       "value":'闫小坤',
+                       "value":"闫小坤",
                        "color":'#173177'
                    },
                    "time":{
-                       "value":'2015年5月4日',
+                       "value":"2015年5月4日",
                        "color":'#173177'
                    }                   
            }
