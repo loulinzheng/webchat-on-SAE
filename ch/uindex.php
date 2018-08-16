@@ -1,5 +1,5 @@
 <?php
-if ( ! defined('IN_APP')) exit('No direct script access allowed');
+//if ( ! defined('IN_APP')) exit('No direct script access allowed');
 //require libfile("lib/weixin.class.php");
 require_once "lib/weixin.class.php";
 
