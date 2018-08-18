@@ -56,11 +56,11 @@ $template_id = "3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY";
  $data = '{
            "touser":"omVCy0rHL7Y-3j3gbBul2tjK1Oys",
            "template_id":"3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY",
-           "url":"http://leehz.applinzi.com/api.php",
+           "url":"http://leehz.applinzi.com/",
            "topcolor":"#FF0000",
            "data":{
                    "name": {
-                       "value":"loulz",
+                       "value":"loulz1",
                        "color":"#173177"
                    },
                    "time":{
