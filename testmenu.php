@@ -54,8 +54,8 @@ $template_id = "3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY";
 //$touser="OPENID";
 //$template_id="TEMPLATEID";
  $data = '{
-           "touser":'.$touser.',
-           "template_id":'.$template_id.',
+           "touser":"omVCy0rHL7Y-3j3gbBul2tjK1Oys",
+           "template_id":"3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY",
            "url":"http://leehz.applinzi.com/api.php",
            "topcolor":"#FF0000",
            "data":{
