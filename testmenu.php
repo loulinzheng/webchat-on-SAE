@@ -56,7 +56,7 @@ $template_id = "3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY";
  $data = '{
            "touser":'.$touser.',
            "template_id":'.$template_id.',
-           "url":"http://leehz.applinzi.com",
+           "url":"http://leehz.applinzi.com/api.php",
            "topcolor":"#FF0000",
            "data":{
                    "name": {
