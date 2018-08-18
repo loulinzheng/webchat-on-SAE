@@ -135,7 +135,7 @@ class weixin extends wxcommon
      * 判断是否是文字信息
      * @return boolean
      //*/
-/*    public function isTextMsg()
+  public function isTextMsg()
     {
         return $this->_postData->MsgType == self::MSG_TYPE_TEXT;
     }
@@ -143,7 +143,7 @@ class weixin extends wxcommon
     /**
      * 判断是否是位置信息
      * @return boolean
-     
+     */
     public function isLocationMsg()
     {
         return $this->_postData->MsgType == self::MSG_TYPE_LOCATION;
@@ -152,7 +152,7 @@ class weixin extends wxcommon
     /**
      * 判断是否是图片
      * @return boolean
-     
+    */ 
     public function isImageMsg(){
         return $this->_postData->MsgType == self::MSG_TYPE_IMAGE;
     }
@@ -160,7 +160,7 @@ class weixin extends wxcommon
     /**
      * 判断是否是链接
      * @return boolean
-     
+     */ 
     public function isLinkMsg(){
         return $this->_postData->MsgType == self::MSG_TYPE_LINK;
     }
@@ -168,7 +168,7 @@ class weixin extends wxcommon
     /**
      * 判断是否是事件推送
      * @return boolean
-     
+     */ 
     public function isEventMsg(){
         return $this->_postData->MsgType == self::MSG_TYPE_EVENT;
     }
@@ -176,7 +176,7 @@ class weixin extends wxcommon
     /**
      * 判断是否是语音消息
      * @return boolean
-     
+     */ 
     public function isVoiceMsg(){
         return $this->_postData->MsgType == self::MSG_TYPE_VOICE;
     }
@@ -184,7 +184,7 @@ class weixin extends wxcommon
     /**
      * 判断是否是视频消息
      * @return boolean
-     
+     */ 
     public function isVideoMsg(){
         return $this->_postData->MsgType == self::MSG_TYPE_VIDEO;
     }
@@ -193,7 +193,7 @@ class weixin extends wxcommon
      * 生成向用户发送的文字信息
      * @param string $content
      * @return string xml字符串
-     
+    */  
    public function outputText($content)
     {
         $textTpl = '<xml>
