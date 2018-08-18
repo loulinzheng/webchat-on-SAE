@@ -50,7 +50,7 @@ $result=https_request($url);
 var_dump($result);
 */
 $touser = "omVCy0rHL7Y-3j3gbBul2tjK1Oys";
- $template_id = "tnoNa1Kgxefs3C9qPVtoEEpjt8DX05u6nPpM0rYNfbM";
+ $template_id = "3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY";
  $data = '{
            "touser":'.$touser.',
            "template_id":'.$template_id.',
