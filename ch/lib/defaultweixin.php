@@ -18,6 +18,7 @@ class DefaultWeixin extends weixin {
         elseif($this->isVoiceMsg()) {
             $this->processText($data->Recognition);
         }
+		else $this->checkInputMsg($data);
     }
 private function processText($data)
 {
