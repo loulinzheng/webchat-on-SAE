@@ -60,11 +60,11 @@ $template_id="TEMPLATEID";
            "topcolor":"#FF0000",
            "data":{
                    "name": {
-                       "value":"闫小坤",
+                       "value":"loulz",
                        "color":"#173177"
                    },
                    "time":{
-                       "value":"2015年5月4日",
+                       "value":"2018-08-18",
                        "color":"#173177"
                    }                   
            }
