@@ -27,7 +27,7 @@ function getUserInfo($code)
  $userinfo_url="https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
  $userinfo_json=https_request($userinfo_url);
  $userinfo_array=json_decode($userinfo_json,true);
- echo $userinfo_array['errcode'];
+ echo $userinfo_array['nickname'];
  return $userinfo_array;
  
 }
