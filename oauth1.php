@@ -18,10 +18,10 @@ function getUserInfo($code)
  $openid=$access_token_array['openid'];
  echo $openid;
  echo $access_token;
- $userinfo_url="https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid";
+ $userinfo_url="https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
  $userinfo_json=https_request($userinfo_url);
  $userinfo_array=json_decode($userinfo_json,true);
- echo $userinfo_array['openid'];
+ echo $userinfo_array['errcode'];
  return $userinfo_array;
  
 }
