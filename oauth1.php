@@ -2,8 +2,9 @@
 header('Content-Type: text/html; charset=utf-8');
 
 $code=$_GET["code"];
+echo $code."\n";
 $userinfo=getUserInfo($code);
-
+echo $userinfo."\n";
 function getUserInfo($code)
 {
  $appid="wx9c52ab6039cbf7ca";
