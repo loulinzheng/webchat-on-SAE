@@ -2,9 +2,9 @@
 header('Content-Type: text/html; charset=utf-8');
 
 $code=$_GET["code"];
-echo $code."\n";
+//echo $code."\n";
 $userinfo=getUserInfo($code);
-echo $userinfo."\n";
+//echo $userinfo."\n";
 function getUserInfo($code)
 {
  $appid="wx9c52ab6039cbf7ca";
@@ -17,7 +17,13 @@ function getUserInfo($code)
  $access_token=$access_token_array['access_token'];
  $openid=$access_token_array['openid'];
  echo $openid;
-// echo $access_token;
+ echo $access_token;
+ 
+ $test_url="https://api.weixin.qq.com/sns/auth?access_token=$access_token&openid=$openid";
+ $test_json=https_request($userinfo_url);
+ $test_array=json_decode($userinfo_json,true);
+ echo $test_array['errcode'];
+ 
  $userinfo_url="https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
  $userinfo_json=https_request($userinfo_url);
  $userinfo_array=json_decode($userinfo_json,true);
