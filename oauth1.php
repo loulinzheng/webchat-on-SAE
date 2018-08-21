@@ -47,15 +47,15 @@ return $data;
 ?>
 <div class="fieldcontain">
  <lable for="openid">OpenID</lable>
- <input name="openid" id="openid" value="<?php echo $userinfo["openid"]; ?> type=text">
+ <input name="openid" id="openid" value="<?php echo $userinfo['openid']; ?> type=text">
 </div>
 <div class="fieldcontain">
  <lable for="nickname">昵称</lable>
- <input name="nickname" id="nickname" value="<?php echo $userinfo["nickname"]; ?> type=text">
+ <input name="nickname" id="nickname" value="<?php echo $userinfo['nickname']; ?> type=text">
 </div>
 <div class="fieldcontain">
  <lable for="sex">性别</lable>
- <input name="sex" id="sex" value="<?php echo $userinfo["sex"]; ?> type=text">
+ <input name="sex" id="sex" value="<?php echo $userinfo['sex']; ?> type=text">
 </div>
 <div class="fieldcontain">
  <lable for="country">国家</lable>
