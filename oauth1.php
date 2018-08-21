@@ -4,8 +4,8 @@ $userinfo=getUserInfo($code);
 
 function getUserInfo($code)
 {
- $appid="wx9c52ab6039cbf7ca"
- $appsecret="012bace7aaab7463829f854749f93543"
+ $appid="wx9c52ab6039cbf7ca";
+ $appsecret="012bace7aaab7463829f854749f93543";
  $access_token="";
  
  $access_token_url="https://api.weixin.qq.com/sns/oauth2/access_token?appid=$appid&secret=$appsecret&code=$code&grant_type=authorization_code";
