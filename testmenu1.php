@@ -1,10 +1,18 @@
 <?php;
+/*
+
+
+
+
 $appId="wx9c52ab6039cbf7ca";
 $secret="012bace7aaab7463829f854749f93543";
 $ACC_TOKEN_URL="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$appId."&secret=".$appSecret;
 $json_data=file_get_contents($ACC_TOKEN_URL);
 $result1=json_decode($json_data);
 $access_token=$result1->access_token;
+*/
+require_once "lib/weixin.class.php";
+$access_token=weixin::getToken();
 
 
 
