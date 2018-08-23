@@ -32,7 +32,7 @@ $template=array('touser'=>"omVCy0rHL7Y-3j3gbBul2tjK1Oys",
 							)
 				);
 
-$url="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token".$access_token;
+$url="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=".$access_token;
 $result=https_request($url,urldecode(json_encode($template)));
 var_dump($result);
 
