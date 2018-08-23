@@ -1,5 +1,5 @@
 <?php;
-/*
+
 
 
 
@@ -10,11 +10,11 @@ $ACC_TOKEN_URL="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_creden
 $json_data=file_get_contents($ACC_TOKEN_URL);
 $result1=json_decode($json_data);
 $access_token=$result1->access_token;
-*/
-require_once "ch/lib/weixin.class.php";
+
+/*require_once "ch/lib/weixin.class.php";
 $access_token=weixin::getToken();
 echo $access_token;
-
+*/
 
 
 $touser="omVCy0rHL7Y-3j3gbBul2tjK1Oys";
