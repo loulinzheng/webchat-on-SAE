@@ -4,15 +4,15 @@
 
 
 
-$appId="wx9c52ab6039cbf7ca";
+/*$appId="wx9c52ab6039cbf7ca";
 $secret="012bace7aaab7463829f854749f93543";
 $ACC_TOKEN_URL="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$appId."&secret=".$appSecret;
 $json_data=file_get_contents($ACC_TOKEN_URL);
 $result1=json_decode($json_data);
-$access_token=$result1->access_token;
+$access_token=$result1->access_token;*/
 
-/*require_once "ch/lib/weixin.class.php";
-$access_token=weixin::getToken();*/
+require_once "ch/lib/weixin.class.php";
+$access_token=weixin::getToken();
 echo $access_token;
 
 
@@ -20,8 +20,8 @@ echo $access_token;
 $touser="omVCy0rHL7Y-3j3gbBul2tjK1Oys";
 $template_id="3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY";
 
-$template=array('touser'=>"omVCy0rHL7Y-3j3gbBul2tjK1Oys",
-                'template_id'=>"3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY",
+$template=array('touser'=>$touser,
+                'template_id'=>$template_id,
 				'url'=>"http://leehz.applinzi.com",
 				'topcolor'=>"#7B68EE",
 				'data'=>array('name'=>array('value'=>urlencode("你好， ，欢迎使用模板消息"),
