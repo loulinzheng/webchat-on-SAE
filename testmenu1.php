@@ -13,7 +13,7 @@ $access_token=$result1->access_token;*/
 
 require_once "ch/lib/weixin.class.php";
 $access_token=weixin::getToken();
-echo $access_token;
+//echo $access_token;
 
 
 
@@ -26,7 +26,7 @@ $template=array('touser'=>$touser,
 				'topcolor'=>"#7B68EE",
 				'data'=>array('name'=>array('value'=>urlencode("你好， ，欢迎使用模板消息"),
 				                             'color'=>"#743A3A",),
-							  'time'=>array('value'=>urlencode("微信公众平台开发实践"),
+							  'time'=>array('value'=>urlencode("2018-08-23"),
 							                   'color'=>"#FF0000",),
 							  
 							)
