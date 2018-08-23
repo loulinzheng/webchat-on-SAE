@@ -19,12 +19,12 @@ $access_token=weixin::getToken();
 
 $touser="omVCy0rHL7Y-3j3gbBul2tjK1Oys";
 $template_id="3-OLIqWl-d6FxXdvG7sgGB6n9_JGt9pMNahrv52KkGY";
-
+$hehe='llz';
 $template=array('touser'=>$touser,
                 'template_id'=>$template_id,
 				'url'=>"http://leehz.applinzi.com",
 				'topcolor'=>"#7B68EE",
-				'data'=>array('name'=>array('value'=>urlencode("你好， ，欢迎使用模板消息"),
+				'data'=>array('name'=>array('value'=>urlencode("你好，$hehe ，欢迎使用模板消息"),
 				                             'color'=>"#743A3A",),
 							  'time'=>array('value'=>urlencode("2018-08-23"),
 							                   'color'=>"#FF0000",),
