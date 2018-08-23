@@ -11,7 +11,7 @@ $json_data=file_get_contents($ACC_TOKEN_URL);
 $result1=json_decode($json_data);
 $access_token=$result1->access_token;
 */
-require_once "lib/weixin.class.php";
+require_once "ch/lib/weixin.class.php";
 $access_token=weixin::getToken();
 
 
