@@ -1,4 +1,4 @@
-<?php;
+<?php
 
 
 
@@ -26,7 +26,7 @@ $template=array('touser'=>$touser,
 				'topcolor'=>"#7B68EE",
 				'data'=>array('name'=>array('value'=>urlencode("你好，$hehe ，欢迎使用模板消息"),
 				                             'color'=>"#743A3A",),
-							  'time'=>array('value'=>urlencode("2018-08-23"),
+							  'time'=>array('value'=>urlencode("2018-08-25"),
 							                   'color'=>"#FF0000",),
 							  
 							)
