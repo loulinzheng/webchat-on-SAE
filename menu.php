@@ -8,25 +8,30 @@ $menuPostData='{
   				 "button":[
 					 {	
 						  "type":"click",
-						  "name":"今日歌曲",
+						  "name":"简单介绍",
 						  "key":"V1001_TODAY_MUSIC"
 					  },
 					  {
 						   "type":"click",
-						   "name":"歌手简介",
+						   "name":"搜索",
 						   "key":"V1001_TODAY_SINGER"
 					  },
 					  {
-						   "name":"菜单",
+						   "name":"我的",
 						   "sub_button":[
 							{
 							   "type":"click",
-							   "name":"hello word",
+							   "name":"个人资料",
 							   "key":"V1001_HELLO_WORLD"
 							},
 							{
 							   "type":"click",
-							   "name":"赞一下我们",
+							   "name":"我的收藏",
+							   "key":"V1001_favorite"
+							},
+							{
+							   "type":"click",
+							   "name":"我的消息",
 							   "key":"V1001_GOOD"
 							}]
 					   }]
