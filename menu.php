@@ -1,4 +1,6 @@
 <?php
+/********
+This cann't work
 
 require 'weixin.class.php';
 
@@ -47,5 +49,5 @@ var_dump($get);
 
 //delete current menu
 $del=$wxmenu->deleteMenu();
-var_dump($del);
+var_dump($del);************/
 ?>
