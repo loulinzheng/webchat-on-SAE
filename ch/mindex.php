@@ -24,9 +24,9 @@ $menu='{
 							   "key":"V1001_HELLO_WORLD"
 							},
 							{
-							   "type":"click",
+							   "type":"view",
 							   "name":"我的收藏",
-							   "key":"V1001_favorite"
+							   "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9c52ab6039cbf7ca&redirect_uri=https://leehz.applinzi.com/oauth2.php&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect"
 							},
 							{
 							   "type":"click",

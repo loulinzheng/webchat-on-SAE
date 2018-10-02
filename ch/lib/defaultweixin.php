@@ -86,7 +86,28 @@ private function checkEvent($data)
     }
     elseif ($this->isClickEvent())
     {
-        $this->outputText("点击菜单拉取消息事件,Key值是:".$data->EventKey); 
+       // $this->outputText("点击菜单拉取消息事件,Key值是:".$data->EventKey); 
+		switch ($data->EventKey)
+		{ case "V1001_TODAY_MUSIC":
+		    $this->outputText("这是一个公益平台,this is a platform for bind date");
+			break;
+		  case "V1001_TODAY_SINGER":
+		  $contentStr[]=array("title"=>"搜索","url"=>"http://www.baidu.coom");
+		    $this->outputText($contentStr);
+           break;			
+		 
+		
+		
+		
+          default:
+		   $this->outputText("点击菜单拉取消息事件,Key值是:".$data->EventKey); 
+		   break;
+		}
+		
+		
+		
+		
+		
     }
     elseif ($this->isViewEvent())
     {
